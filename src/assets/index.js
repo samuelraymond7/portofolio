@@ -20,6 +20,9 @@ import framermotion from "./tech/framermotion.svg"
 import procode from "./company/procodecg.png";
 
 import nike from "./nike.png"
+import hoobank from "./hoobank.png"
+import gpt from "./gpt.png"
+import metaverse from "./metaverse.png"
 
 export {
   logo,
@@ -41,5 +44,8 @@ export {
   typescript,
   framermotion,
   procode,
-  nike
+  nike,
+  hoobank,
+  gpt,
+  metaverse
 };

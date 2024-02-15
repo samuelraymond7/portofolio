@@ -13,7 +13,9 @@ module.exports = {
         "white-100": "#f3f3f3",
         "react":"#087ea4",
         "vite":"#ffd028",
-        "tailwind":"#38bdf8"
+        "tailwind":"#38bdf8",
+        "css":"#264de4",
+        "framer":"#bb4b96",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
