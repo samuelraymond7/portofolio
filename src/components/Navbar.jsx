@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
@@ -20,7 +20,10 @@ const Navbar = () => {
       setNavScroll(false);
     }
   };
+  useEffect(() => {
   window.addEventListener("scroll", changeColor);
+  }, []);
+
   return (
     <header
       className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 ${navScroll ? "bg-black" : "bg-transparent"}`}
