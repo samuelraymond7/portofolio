@@ -21,7 +21,7 @@ const Navbar = () => {
     }
   };
   useEffect(() => {
-  window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", changeColor);
   }, []);
 
   return (
@@ -84,17 +84,18 @@ const Navbar = () => {
             </Link>
           </NavigationMenu>
 
-          <div className=" flex md:hidden fixed top-0 right-0 hover:w-44 h-full hover:bg-black hover:bg-opacity-60 transition-all duration-200 ease-out group flex-col">
-            <ul>
-              <li className="flex justify-start items-center py-4 px-2 group-hover:bg-slate-800 group-hover:bg-opacity-60">
-                <MdKeyboardDoubleArrowLeft
-                  className="group-hover:rotate-180 transition-all duration-200 ease-in"
-                  size={40}
-                />
-                <p className="hidden opacity-0 group-hover:block group-hover:opacity-100 transition-all ease-in duration-200 mx-auto">
-                  MENU
-                </p>
-              </li>
+          <div className=" flex md:hidden fixed top-0 right-0 hover:w-44 sm:hover:w-64 h-full hover:bg-black hover:bg-opacity-60 transition-all duration-200 ease-out group flex-col pointer-events-none">
+            <div className="flex justify-start items-center py-4 px-2 group-hover:bg-slate-800 group-hover:bg-opacity-70 transition-all duration-200 ease-out pointer-events-auto">
+              <MdKeyboardDoubleArrowLeft
+                className="group-hover:rotate-180 transition-all duration-200 ease-in"
+                size={40}
+              />
+              <p className="hidden opacity-0 group-hover:block group-hover:opacity-100 transition-all ease-in duration-200 mx-auto text-[17px] font-medium">
+                MENU
+              </p>
+            </div>
+
+            <ul className=" pointer-events-auto">
               <li className=" group-hover:block hidden">tes</li>
             </ul>
           </div>
