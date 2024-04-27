@@ -8,7 +8,7 @@ const Button = ({ children, arrow = true, tipe = "button", className }) => (
   >
     {children}
     {arrow && (
-      <MdOutlineArrowDropDown className=" ml-1 group-hover:rotate-180 transition duration-200" />
+      <MdOutlineArrowDropDown className=" ml-1 group-hover:rotate-180 group-focus:rotate-180 transition duration-200" />
     )}
   </button>
 );
