@@ -10,15 +10,19 @@ const NavigationMenu = ({ children, className }) => (
 );
 
 const NavigationMenuList = ({ children, trigger, className }) => (
-  <>
-    <Button className={`group peer/${trigger}`}>{trigger}</Button>
+  <div className="group">
+    <Button
+      className={`group peer/${trigger} group-hover:bg-slate-800 group-hover:text-slate-50`}
+    >
+      {trigger}
+    </Button>
     <ul
       className={`hidden hover:flex flex-col absolute top-10 left-0 
       bg-slate-950 text-slate-50 rounded-md p-4 gap-3 w-[334px] ${className}`}
     >
       {children}
     </ul>
-  </>
+  </div>
 );
 
 const NavigationMenuContent = ({ id, children, title, link }) => (
