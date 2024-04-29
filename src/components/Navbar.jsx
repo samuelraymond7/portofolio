@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {/* NavBar */}
         <nav>
-          <NavigationMenu className="hidden md:flex">
+          <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList trigger="Home" className="peer-hover/Home:flex">
               {navLinks.map((nav) => (
                 <NavigationMenuContent
@@ -83,7 +83,7 @@ const Navbar = () => {
           </NavigationMenu>
 
           <div
-            className={`flex md:hidden fixed top-0 right-0 ${sideBarActive && "w-44 sm:w-64 bg-black bg-opacity-60"} h-full transition-all duration-200 ease-out group flex-col pointer-events-none`}
+            className={`flex lg:hidden fixed top-0 right-0 ${sideBarActive && "w-44 sm:w-64 md:w-80 bg-black bg-opacity-60"} h-full transition-all duration-200 ease-out group flex-col pointer-events-none`}
           >
             <div
               className={`flex justify-start items-center py-4 px-2 ${sideBarActive && "bg-slate-800 bg-opacity-70"} transition-all duration-200 ease-out pointer-events-auto cursor-pointer`}
