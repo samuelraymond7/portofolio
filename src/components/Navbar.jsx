@@ -85,21 +85,29 @@ const Navbar = () => {
             </Link>
           </NavigationMenu>
 
-          <div className=" flex md:hidden fixed top-0 right-0 hover:w-44 sm:hover:w-64 h-full hover:bg-black hover:bg-opacity-60 transition-all duration-200 ease-out group flex-col pointer-events-none">
-            <div className="flex justify-start items-center py-4 px-2 group-hover:bg-slate-800 group-hover:bg-opacity-70 transition-all duration-200 ease-out pointer-events-auto">
-              <div onClick={() => setSideBarActive((prev) => !prev)}>
-                <MdKeyboardDoubleArrowLeft
-                  className={`transition-all duration-200 ease-in ${sideBarActive && "rotate-180"}`}
-                  size={40}
-                />
-              </div>
-              <p className="hidden opacity-0 group-hover:block group-hover:opacity-100 transition-all ease-in duration-200 mx-auto text-[17px] font-medium">
+          <div
+            className={`flex md:hidden fixed top-0 right-0 ${sideBarActive && "w-44 sm:w-64 bg-black bg-opacity-60"} h-full transition-all duration-200 ease-out group flex-col pointer-events-none`}
+          >
+            <div
+              className={`flex justify-start items-center py-4 px-2 ${sideBarActive && "bg-slate-800 bg-opacity-70"} transition-all duration-200 ease-out pointer-events-auto cursor-pointer`}
+              onClick={() => setSideBarActive((prev) => !prev)}
+            >
+              <MdKeyboardDoubleArrowLeft
+                className={`transition-all duration-200 ease-in ${sideBarActive && "rotate-180"}`}
+                size={40}
+              />
+
+              <p
+                className={` ${sideBarActive ? "mx-auto" : "mx-1"}  transition-all ease-in duration-200 text-[17px] font-medium`}
+              >
                 MENU
               </p>
             </div>
 
-            <ul className=" pointer-events-auto">
-              <li className=" group-hover:block hidden">tes</li>
+            <ul
+              className={` ${sideBarActive ? "block opacity-100" : "hidden opacity-0"}  transition-all ease-in duration-200 text-[17px] font-medium`}
+            >
+              <li>tes</li>
             </ul>
           </div>
         </nav>
