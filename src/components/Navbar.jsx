@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 import { navLinks } from "@/constants";
 import {
   NavigationMenu,
@@ -83,10 +84,10 @@ const Navbar = () => {
           </NavigationMenu>
 
           <div
-            className={`flex lg:hidden fixed top-0 right-0 ${sideBarActive && "w-44 sm:w-64 md:w-80 bg-black bg-opacity-60"} h-full transition-all duration-200 ease-out group flex-col pointer-events-none`}
+            className={`flex lg:hidden fixed top-0 right-0 ${sideBarActive && "w-44 sm:w-64 md:w-80 bg-black bg-opacity-60"} h-full transition-all duration-200 ease-out flex-col`}
           >
             <div
-              className={`flex justify-start items-center py-4 px-2 ${sideBarActive && "bg-slate-800 bg-opacity-70"} transition-all duration-200 ease-out pointer-events-auto cursor-pointer`}
+              className={`flex justify-start items-center py-4 px-2 ${sideBarActive && "bg-slate-800 bg-opacity-70"} transition-all duration-200 ease-out cursor-pointer`}
               onClick={() => setSideBarActive((prev) => !prev)}
             >
               <MdKeyboardDoubleArrowLeft
@@ -95,16 +96,52 @@ const Navbar = () => {
               />
 
               <p
-                className={` ${sideBarActive ? "mx-auto" : "mx-1"}  transition-all ease-in duration-200 text-[17px] font-medium`}
+                className={` ${sideBarActive ? "mx-auto" : "mx-1"}  transition-all ease-in duration-200 text-[21px] font-medium`}
               >
                 MENU
               </p>
             </div>
 
             <ul
-              className={` ${sideBarActive ? "block opacity-100" : "hidden opacity-0"}  transition-all ease-in duration-200 text-[17px] font-medium`}
+              className={` ${sideBarActive ? "block opacity-100" : "hidden opacity-0"}  transition-all ease-in duration-200 font-medium p-2`}
             >
-              <li>tes</li>
+              <li className="rounded-xl w-full group hover:bg-slate-900 hover:bg-opacity-70">
+                <div className="rounded-xl w-full p-3 justify-between items-center flex group-hover:bg-slate-800 group-hover:bg-opacity-70">
+                  <p className=" text-[17px]">Home</p>
+                  <IoIosArrowDown className=" group-hover:rotate-180 transition-all duration-200" />
+                </div>
+
+                <ul className="px-3 py-1 group-hover:block hidden scale-up-ver-top *:rounded-xl *:p-3 *:my-1">
+                  <li className="hover:bg-slate-800 hover:bg-opacity-70">
+                    <div className="text-[15px] font-medium leading-none">
+                      Judul
+                    </div>
+                    <p className="line-clamp-2 text-sm leading-snug text-slate-300">
+                      Anak
+                    </p>
+                  </li>
+
+                  <li className="hover:bg-slate-800 hover:bg-opacity-70">
+                    <div className="text-[15px] font-medium leading-none">
+                      Judul
+                    </div>
+                    <p className="line-clamp-2 text-sm leading-snug text-slate-300">
+                      Anak
+                    </p>
+                  </li>
+
+                  <li className="hover:bg-slate-800 hover:bg-opacity-70">
+                    <div className="text-[15px] font-medium leading-none">
+                      Judul
+                    </div>
+                    <p className="line-clamp-2 text-sm leading-snug text-slate-300">
+                      Anak
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <div className="bg-white h-[1px] w-full rounded-full my-2 scale-up-ver-top" />
             </ul>
           </div>
         </nav>

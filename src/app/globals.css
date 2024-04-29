@@ -14,7 +14,41 @@
 }
 
 body {
-  background-color: blue;
-  /* background-image: url("/herobg.png"); */
+  /* background-color: blue; */
+  background-image: url("/herobg.png");
   height: 1000px;
+}
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+.scale-up-ver-top {
+  -webkit-animation: scale-up-ver-top 0.2s ease-out both;
+  animation: scale-up-ver-top 0.2s ease-out both;
 }
