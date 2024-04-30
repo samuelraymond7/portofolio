@@ -4,7 +4,10 @@ import { Hero } from "@/components";
 const page = () => (
   <>
     <Hero />
-    Lain lain
+    <p>asdf</p>
+    <p>qasdf</p>
+    <p>fsadf</p>
+    <p>sadfs</p>
   </>
 );
 
