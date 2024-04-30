@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Button from "./Button";
 
 const NavigationMenu = ({ children, className }) => (
@@ -11,32 +12,30 @@ const NavigationMenu = ({ children, className }) => (
 
 const NavigationMenuList = ({ children, trigger, className }) => (
   <div className="group">
-    <Button
-      className={`group peer/${trigger} group-hover:bg-slate-800 group-hover:text-slate-50`}
-    >
+    <Button className="group-hover:bg-slate-800 group-hover:text-slate-50">
       {trigger}
     </Button>
     <ul
-      className={`hidden hover:flex flex-col absolute top-10 left-0 
-      bg-slate-950 text-slate-50 rounded-md p-4 gap-3 w-[334px] ${className}`}
+      className={`hidden hover:flex group-hover:flex flex-col absolute top-10 left-0 
+      bg-slate-950 text-slate-50 rounded-xl p-4 gap-3 w-[334px] ${className}`}
     >
       {children}
     </ul>
   </div>
 );
 
-const NavigationMenuContent = ({ id, children, title, link }) => (
-  <li key={id}>
-    <a
+const NavigationMenuContent = ({ children, title, link }) => (
+  <li>
+    <Link
       href={link}
       rel="noopener noreferrer"
-      className="block space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-800"
+      className="block space-y-1 rounded-xl p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-800"
     >
       <div className="text-[15px] font-medium leading-none">{title}</div>
       <p className="line-clamp-2 text-sm leading-snug text-slate-300">
         {children}
       </p>
-    </a>
+    </Link>
   </li>
 );
 

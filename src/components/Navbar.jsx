@@ -51,11 +51,10 @@ const Navbar = () => {
         {/* NavBar */}
         <nav>
           <NavigationMenu className="hidden lg:flex">
-            <NavigationMenuList trigger="Home" className="peer-hover/Home:flex">
+            <NavigationMenuList trigger="Home">
               {navLinks.map((nav) => (
                 <NavigationMenuContent
                   key={nav.id}
-                  id={nav.id}
                   title={nav.title}
                   link={nav.link}
                 >
@@ -64,15 +63,14 @@ const Navbar = () => {
               ))}
             </NavigationMenuList>
 
-            <NavigationMenuList
-              trigger="Games"
-              className="peer-hover/Games:flex"
-            >
-              No games available yet
+            <NavigationMenuList trigger="Games">
+              <p className="text-[15px] font-medium leading-none">
+                No games available yet
+              </p>
             </NavigationMenuList>
 
             <Link
-              className="flex h-10 items-center justify-center rounded-md px-4 py-2 text-[17px] font-medium transition-colors outline-none bg-transparent hover:bg-slate-800 hover:text-slate-50 duration-200"
+              className="flex h-10 items-center justify-center rounded-lg px-4 py-2 text-[17px] font-medium transition-colors outline-none bg-transparent hover:bg-slate-800 hover:text-slate-50 duration-200"
               href="https://www.linkedin.com/in/samuel-raymond-pranowo/"
               rel="noopener noreferrer"
               target="_blank"
