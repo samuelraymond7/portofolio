@@ -3,14 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
 import { navLinks } from "@/constants";
 import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuContent,
 } from "./ui/Menubar";
+import { SideMenu, SideMenuContent, SideMenuList } from "./ui/Sidebar";
 
 const Navbar = () => {
   const [navScroll, setNavScroll] = useState(false);
@@ -24,7 +23,6 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
   }, []);
-  const [sideBarActive, setSideBarActive] = useState(false);
 
   return (
     <header
@@ -44,7 +42,7 @@ const Navbar = () => {
             width={10}
             height={10}
           />
-          <p className=" text-white text-[18px] font-bold flex">
+          <p className=" text-white text-[18px] font-semibold flex">
             Samuel Raymond &nbsp;
             <span className=" lg:block hidden">| Web Developer</span>
           </p>
@@ -83,67 +81,26 @@ const Navbar = () => {
             </Link>
           </NavigationMenu>
 
-          <div
-            className={`flex lg:hidden fixed top-0 right-0 ${sideBarActive && "w-44 sm:w-64 md:w-80 bg-black bg-opacity-60"} h-full transition-all duration-200 ease-out flex-col`}
-          >
-            <div
-              className={`flex justify-start items-center py-4 px-2 ${sideBarActive && "bg-slate-800 bg-opacity-70"} transition-all duration-200 ease-out cursor-pointer`}
-              onClick={() => setSideBarActive((prev) => !prev)}
+          <SideMenu MenuTitle="Menu">
+            <SideMenuList trigger="Home">
+              {navLinks.map((nav) => (
+                <SideMenuContent key={nav.id} title={nav.title} link={nav.link}>
+                  {nav.content}
+                </SideMenuContent>
+              ))}
+            </SideMenuList>
+
+            <SideMenuList trigger="Game">No games available yet</SideMenuList>
+
+            <Link
+              className="rounded-xl w-full p-3 justify-between items-center flex hover:bg-slate-800 hover:bg-opacity-70 text-[17px]"
+              href="https://www.linkedin.com/in/samuel-raymond-pranowo/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <MdKeyboardDoubleArrowLeft
-                className={`transition-all duration-200 ease-in ${sideBarActive && "rotate-180"}`}
-                size={40}
-              />
-
-              <p
-                className={` ${sideBarActive ? "mx-auto" : "mx-1"}  transition-all ease-in duration-200 text-[21px] font-medium`}
-              >
-                MENU
-              </p>
-            </div>
-
-            <ul
-              className={` ${sideBarActive ? "block opacity-100" : "hidden opacity-0"}  transition-all ease-in duration-200 font-medium p-2`}
-            >
-              <li className="rounded-xl w-full group hover:bg-slate-900 hover:bg-opacity-70">
-                <div className="rounded-xl w-full p-3 justify-between items-center flex group-hover:bg-slate-800 group-hover:bg-opacity-70">
-                  <p className=" text-[17px]">Home</p>
-                  <IoIosArrowDown className=" group-hover:rotate-180 transition-all duration-200" />
-                </div>
-
-                <ul className="px-3 py-1 group-hover:block hidden scale-up-ver-top *:rounded-xl *:p-3 *:my-1">
-                  <li className="hover:bg-slate-800 hover:bg-opacity-70">
-                    <div className="text-[15px] font-medium leading-none">
-                      Judul
-                    </div>
-                    <p className="line-clamp-2 text-sm leading-snug text-slate-300">
-                      Anak
-                    </p>
-                  </li>
-
-                  <li className="hover:bg-slate-800 hover:bg-opacity-70">
-                    <div className="text-[15px] font-medium leading-none">
-                      Judul
-                    </div>
-                    <p className="line-clamp-2 text-sm leading-snug text-slate-300">
-                      Anak
-                    </p>
-                  </li>
-
-                  <li className="hover:bg-slate-800 hover:bg-opacity-70">
-                    <div className="text-[15px] font-medium leading-none">
-                      Judul
-                    </div>
-                    <p className="line-clamp-2 text-sm leading-snug text-slate-300">
-                      Anak
-                    </p>
-                  </li>
-                </ul>
-              </li>
-
-              <div className="bg-white h-[1px] w-full rounded-full my-2 scale-up-ver-top" />
-            </ul>
-          </div>
+              LinkedIn
+            </Link>
+          </SideMenu>
         </nav>
       </div>
     </header>

@@ -14,8 +14,8 @@
 }
 
 body {
-  /* background-color: blue; */
-  background-image: url("/herobg.png");
+  background-color: blue;
+  /* background-image: url("/herobg.png"); */
   height: 1000px;
 }
 
