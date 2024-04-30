@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 ${navScroll ? "bg-black" : "bg-transparent"}`}
+      className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-40 ${navScroll ? "bg-black" : "bg-transparent"}`}
     >
       <div className=" w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo dan Nama */}

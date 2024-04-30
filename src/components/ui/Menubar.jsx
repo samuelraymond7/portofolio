@@ -16,7 +16,7 @@ const NavigationMenuList = ({ children, trigger, className }) => (
       {trigger}
     </Button>
     <ul
-      className={`hidden hover:flex group-hover:flex flex-col absolute top-10 left-0 
+      className={`hidden scale-up-ver-top hover:flex group-hover:flex flex-col absolute top-10 left-0 
       bg-slate-950 text-slate-50 rounded-xl p-4 gap-3 w-[334px] ${className}`}
     >
       {children}
