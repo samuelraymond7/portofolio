@@ -82,16 +82,6 @@ const Navbar = () => {
           </NavigationMenu>
 
           <SideMenu MenuTitle="Menu">
-            <SideMenuList trigger="Home">
-              {navLinks.map((nav) => (
-                <SideMenuContent key={nav.id} title={nav.title} link={nav.link}>
-                  {nav.content}
-                </SideMenuContent>
-              ))}
-            </SideMenuList>
-
-            <SideMenuList trigger="Game">No games available yet</SideMenuList>
-
             <Link
               className="rounded-xl w-full p-3 justify-between items-center flex hover:bg-slate-800 hover:bg-opacity-70 text-[17px]"
               href="https://www.linkedin.com/in/samuel-raymond-pranowo/"
@@ -100,6 +90,18 @@ const Navbar = () => {
             >
               LinkedIn
             </Link>
+
+            <SideMenuList trigger="Home">
+              {navLinks.map((nav) => (
+                <SideMenuContent key={nav.id} title={nav.title} link={nav.link}>
+                  {nav.content}
+                </SideMenuContent>
+              ))}
+            </SideMenuList>
+
+            <SideMenuList trigger="Game">
+              <p className="text-[15px] font-medium ">No games available yet</p>
+            </SideMenuList>
           </SideMenu>
         </nav>
       </div>
