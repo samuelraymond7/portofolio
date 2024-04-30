@@ -13,10 +13,8 @@
   color-scheme: dark;
 }
 
-body {
-  background-color: blue;
-  /* background-image: url("/herobg.png"); */
-  height: 1000px;
+.bg-hero {
+  background-image: url("/herobg.png");
 }
 
 @-webkit-keyframes scale-up-ver-top {

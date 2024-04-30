@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components";
 
 const layout = ({ children }) => (
   <>
     <Navbar />
-    {children}
-    Footer
+    <main className=" bg-[#050816]">{children}</main>
   </>
 );
 
