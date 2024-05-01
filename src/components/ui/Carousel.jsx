@@ -36,13 +36,17 @@ const Carousel = ({ display }) => {
         <RiArrowLeftSLine className=" text-[15px] sm:text-[25px] md:text-[35px]" />
       </div>
 
-      <Link href="#projects" rel="noopener noreferrer">
+      <Link
+        href="#projects"
+        rel="noopener noreferrer "
+        className="rounded-xl z-0 max-w-[700px] border-slate-500 border-2"
+      >
         <Image
           src={display[imageIndex].image}
           alt="Hero Logo"
           width={1920}
           height={1080}
-          className=" object-contain rounded-xl z-0 max-w-[700px] border-slate-500 border-2 max-lg:w-4/5 cursor-pointer"
+          className=" object-contain rounded-xl"
         />
       </Link>
 
