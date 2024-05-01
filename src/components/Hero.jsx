@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./ui/Carousel";
+import { projects } from "@/constants";
 
 const Hero = () => (
   <section className=" bg-hero bg-cover bg-no-repeat bg-center w-full h-screen sm:px-16 px-6">
@@ -21,7 +22,7 @@ const Hero = () => (
         </div>
       </div>
 
-      <Carousel />
+      <Carousel display={projects} />
 
       <div className=" absolute sm:bottom-10 bottom-16 lg:bottom-5 w-full flex justify-center items-center">
         <div className="w-[35px] h-[65px] rounded-3xl border-4 border-[#aaa6c3] flex justify-center items-start p-2">

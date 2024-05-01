@@ -3,17 +3,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import { projects } from "@/constants";
 
-const Carousel = () => {
+const Carousel = ({ display }) => {
   const [imageIndex, setImageIndex] = useState(0);
   const clickLeft = () =>
     imageIndex - 1 === -1
-      ? setImageIndex(projects.length - 1)
+      ? setImageIndex(display.length - 1)
       : setImageIndex(imageIndex - 1);
 
   const clickRight = () =>
-    imageIndex + 1 === projects.length
+    imageIndex + 1 === display.length
       ? setImageIndex(0)
       : setImageIndex(imageIndex + 1);
 
@@ -37,7 +36,7 @@ const Carousel = () => {
       </div>
 
       <Image
-        src={projects[imageIndex].image}
+        src={display[imageIndex].image}
         alt="Hero Logo"
         width={1920}
         height={1080}
