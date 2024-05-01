@@ -4,7 +4,7 @@ import { projects } from "@/constants";
 
 const Hero = () => (
   <section className=" bg-hero bg-cover bg-no-repeat bg-center w-full h-screen sm:px-16 px-6">
-    <div className="pt-[160px] sm:pt-[120px] lg:pt-[95px] max-w-7xl mx-auto h-full flex flex-col gap-28 md:gap-20 relative">
+    <div className="pt-[160px] sm:pt-[120px] md:pt-[105px] lg:pt-[95px] max-w-7xl mx-auto h-full flex flex-col gap-16 relative">
       <div className="flex flex-row items-start gap-3">
         <div className=" flex flex-col justify-center items-center mt-3 ml-2">
           <div className=" w-5 h-5 rounded-full bg-[#915eff]" />
