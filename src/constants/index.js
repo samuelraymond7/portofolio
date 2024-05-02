@@ -1,4 +1,4 @@
-import { nike, gpt, metaverse, hoobank } from "../../public";
+import { nike, gpt, metaverse, hoobank, web, mobile } from "../../public";
 
 export const navLinks = [
   {
@@ -107,5 +107,16 @@ export const projects = [
     image: metaverse,
     source_code_link: "https://github.com/samuelraymond7/metaverse",
     web_link: "https://samuelraymond7.github.io/metaverse/",
+  },
+];
+
+export const services = [
+  {
+    title: "Web Developer",
+    icon: web,
+  },
+  {
+    title: "React Developer",
+    icon: mobile,
   },
 ];
