@@ -4,7 +4,7 @@ import { projects } from "@/constants";
 
 const Hero = () => (
   <section className=" bg-hero bg-cover bg-no-repeat bg-center w-full h-screen sm:px-16 px-6">
-    <div className="pt-[160px] sm:pt-[120px] md:pt-[105px] lg:pt-[95px] max-w-7xl mx-auto h-full flex flex-col gap-16 relative">
+    <div className="pb-[100px] pt-[40px] xs:py-[40px] lg:pt-[95px] max-w-7xl mx-auto h-full flex flex-col relative max-lg:justify-evenly">
       <div className="flex flex-row items-start gap-3">
         <div className=" flex flex-col justify-center items-center mt-3 ml-2">
           <div className=" w-5 h-5 rounded-full bg-[#915eff]" />
@@ -24,7 +24,7 @@ const Hero = () => (
 
       <Carousel display={projects} />
 
-      <div className=" absolute sm:bottom-10 bottom-16 lg:bottom-5 w-full flex justify-center items-center">
+      <div className=" absolute xs:bottom-7 bottom-14 lg:bottom-5 w-full flex justify-center items-center">
         <div className="w-[35px] h-[65px] rounded-3xl border-4 border-[#aaa6c3] flex justify-center items-start p-2">
           <div className="w-3 h-3 rounded-full bg-[#aaa6c3] mb-1 slide-top" />
         </div>
