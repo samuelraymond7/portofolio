@@ -6,4 +6,6 @@ import nike from "./nike.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
-export { gpt, hoobank, metaverse, nike, mobile, web };
+import github from "./github.png";
+
+export { gpt, hoobank, metaverse, nike, mobile, web, github };
