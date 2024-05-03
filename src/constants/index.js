@@ -13,6 +13,7 @@ import {
   reactjs,
   tailwind,
   nextjs,
+  vite,
   figma,
   git,
   github,
@@ -189,6 +190,10 @@ export const technologies = [
   {
     name: "Next JS",
     icon: nextjs,
+  },
+  {
+    name: "Vite",
+    icon: vite,
   },
   {
     name: "Node JS",

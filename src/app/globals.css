@@ -236,3 +236,40 @@
   -webkit-animation: wobble-hor-bottom 0.8s both;
   animation: wobble-hor-bottom 0.8s both;
 }
+
+.ball-gradient {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% 10%,
+    rgba(57, 44, 127, 0.83) 0%,
+    rgba(21, 16, 48, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% 10%,
+    rgba(57, 44, 127, 0.83) 0%,
+    rgba(21, 16, 48, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% 10%,
+    rgba(57, 44, 127, 0.83) 0%,
+    rgba(21, 16, 48, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% 10%,
+    rgba(57, 44, 127, 0.83) 0%,
+    rgba(21, 16, 48, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% 10%,
+    rgba(57, 44, 127, 0.83) 0%,
+    rgba(21, 16, 48, 1) 100%
+  );
+}

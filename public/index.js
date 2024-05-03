@@ -15,6 +15,7 @@ import typescript from "./tech/typescript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import nextjs from "./tech/nextjs.png";
+import vite from "./tech/vite.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import mongodb from "./tech/mongodb.png";
@@ -38,6 +39,7 @@ export {
   reactjs,
   tailwind,
   nextjs,
+  vite,
   figma,
   git,
   mongodb,
