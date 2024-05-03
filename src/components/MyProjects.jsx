@@ -13,7 +13,7 @@ const textColor = {
 };
 
 const ProjectCard = ({ input }) => (
-  <div className="bg-[#151030] p-5 rounded-2xl sm:w-[360px] w-full">
+  <div className="bg-[#151030] p-5 rounded-2xl sm:w-[360px] w-full wobble-hor-bottom">
     <Link
       className=" w-full"
       href={input.web_link}

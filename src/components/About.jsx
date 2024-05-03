@@ -3,7 +3,7 @@ import React from "react";
 import { services } from "@/constants";
 
 const ServiceCard = ({ title, icon }) => (
-  <div className=" green-pink-gradient p-[1px] rounded-[20px]">
+  <div className=" green-pink-gradient p-[1px] rounded-[20px] jello-horizontal">
     <div className="bg-[#151030] rounded-[20px] py-5 px-12 h-[280px] w-[250px] flex justify-evenly items-center flex-col">
       <Image
         src={icon}
