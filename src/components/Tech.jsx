@@ -7,15 +7,15 @@ const Tech = () => (
     {technologies.map((tech) => (
       <div
         key={tech.name}
-        className="green-pink-gradient rounded-full p-[3px] flex justify-center items-center hover:translate-y-[-10px] transition-transform duration-200"
+        className="green-pink-gradient rounded-full p-[3px] flex justify-center items-center hover:translate-y-[-10px] hover:scale-110 transition-transform duration-200"
       >
         <div className=" w-24 h-24 rounded-full ball-gradient flex justify-center items-center">
           <Image
             src={tech.icon}
             alt={tech.name}
-            width={60}
-            height={60}
-            className="object-contain"
+            width={100}
+            height={100}
+            className="object-contain w-[60px] h-[60px]"
           />
         </div>
       </div>
