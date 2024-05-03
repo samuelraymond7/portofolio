@@ -1,4 +1,12 @@
-import { nike, gpt, metaverse, hoobank, web, mobile } from "../../public";
+import {
+  nike,
+  gpt,
+  metaverse,
+  hoobank,
+  web,
+  mobile,
+  procode,
+} from "../../public";
 
 export const navLinks = [
   {
@@ -118,5 +126,24 @@ export const services = [
   {
     title: "React Developer",
     icon: mobile,
+  },
+];
+
+export const experiences = [
+  {
+    title: "Research & Development Software Engineer Internship",
+    company_name: "ProCodeCG",
+    icon: procode,
+    iconBg: "#E6DEDD",
+    date: "July 2022 - Nov 2022",
+    points: [
+      "Create a program to detect facial expressions using Python.",
+      "Create a face filter program using Python.",
+      "Create a program to carry out attendance by voice using Python.",
+      "Processed more than 400 stock data using Python.",
+      "Conduct experiments and select Artificial Intelligence methods to make predictions on stock prices.",
+      "Create a program to download and make predictions on stock data using Python.",
+      "Testing the stock prediction program that has been created in real conditions.",
+    ],
   },
 ];
