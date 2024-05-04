@@ -24,6 +24,10 @@ import framermotion from "./tech/framermotion.svg";
 
 import github from "./github.png";
 
+import paper from "./games/paper.png";
+import rock from "./games/rock.png";
+import scissor from "./games/scissor.png";
+
 export {
   gpt,
   hoobank,
@@ -46,4 +50,7 @@ export {
   nodejs,
   framermotion,
   github,
+  rock,
+  paper,
+  scissor,
 };

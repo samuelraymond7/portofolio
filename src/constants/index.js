@@ -20,6 +20,9 @@ import {
   mongodb,
   nodejs,
   framermotion,
+  rock,
+  paper,
+  scissor,
 } from "../../public";
 
 export const navLinks = [
@@ -218,5 +221,20 @@ export const technologies = [
   {
     name: "Framer Motion",
     icon: framermotion,
+  },
+];
+
+export const rockpaperscissor = [
+  {
+    name: "rock",
+    icon: rock,
+  },
+  {
+    name: "paper",
+    icon: paper,
+  },
+  {
+    name: "scissor",
+    icon: scissor,
   },
 ];
