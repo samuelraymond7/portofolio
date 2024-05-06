@@ -13,7 +13,12 @@ const page = () => (
         </h2>
 
         <Image src={head} alt="coin" width={100} height={100} />
-        <div className=" w-[60%] bg-blue-200">button</div>
+        <button
+          type="button"
+          className=" w-[60%] flex items-center justify-center rounded-lg py-2 text-[17px] font-medium transition-colors outline-none bg-transparent coin-button duration-200"
+        >
+          SPIN
+        </button>
       </div>
     </div>
   </section>
