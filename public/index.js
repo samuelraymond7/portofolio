@@ -28,6 +28,9 @@ import paper from "./games/paper.png";
 import rock from "./games/rock.png";
 import scissor from "./games/scissor.png";
 
+import head from "./games/head.png";
+import tail from "./games/tail.png";
+
 export {
   gpt,
   hoobank,
@@ -53,4 +56,6 @@ export {
   rock,
   paper,
   scissor,
+  head,
+  tail,
 };
