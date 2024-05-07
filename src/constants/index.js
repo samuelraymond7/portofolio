@@ -238,3 +238,126 @@ export const rockpaperscissor = [
     icon: scissor,
   },
 ];
+
+export const roulette = [
+  {
+    id: "choice0",
+    choice: "It is certain",
+  },
+  {
+    id: "choice1",
+    choice: "It is decidedly so",
+  },
+  {
+    id: "choice2",
+    choice: "Without a doubt",
+  },
+  {
+    id: "choice3",
+    choice: "Yes definitely",
+  },
+  {
+    id: "choice4",
+    choice: "You may rely on it",
+  },
+  {
+    id: "choice5",
+    choice: "As I see it, yes",
+  },
+  {
+    id: "choice6",
+    choice: "Most likely",
+  },
+  {
+    id: "choice7",
+    choice: "Outlook good",
+  },
+  {
+    id: "choice8",
+    choice: "Yes",
+  },
+  {
+    id: "choice9",
+    choice: "Signs point to yes",
+  },
+  {
+    id: "choice10",
+    choice: "Reply hazy, try again",
+  },
+  {
+    id: "choice11",
+    choice: "Ask again later",
+  },
+  {
+    id: "choice12",
+    choice: "Better not tell you now",
+  },
+  {
+    id: "choice13",
+    choice: "Cannot predict now",
+  },
+  {
+    id: "choice14",
+    choice: "Concentrate and ask again",
+  },
+  {
+    id: "choice15",
+    choice: "Don’t count on it",
+  },
+  {
+    id: "choice16",
+    choice: "My reply is no",
+  },
+  {
+    id: "choice17",
+    choice: "My sources say no",
+  },
+  {
+    id: "choice18",
+    choice: "Outlook not so good",
+  },
+  {
+    id: "choice19",
+    choice: "Very doubtful",
+  },
+  {
+    id: "choice20",
+    choice: "Ask your mom - mom knows best",
+  },
+  {
+    id: "choice21",
+    choice: "NO NO NO!!!",
+  },
+  {
+    id: "choice22",
+    choice: "YES YES YES!!!",
+  },
+  {
+    id: "choice23",
+    choice: "If you believe really hard, yes",
+  },
+  {
+    id: "choice24",
+    choice: "Not with that attitude",
+  },
+  {
+    id: "choice25",
+    choice: "Only you can decide",
+  },
+  {
+    id: "choice26",
+    choice: "Go for it; your life depends on it",
+  },
+  {
+    id: "choice27",
+    choice: "SOMEHOW, no",
+  },
+  {
+    id: "choice28",
+    choice: "Telling you now would spoil all the fun",
+  },
+  {
+    id: "choice29",
+    choice: "Sssuuuuurrreee?",
+  },
+];
