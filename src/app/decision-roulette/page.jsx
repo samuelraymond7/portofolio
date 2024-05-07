@@ -16,7 +16,7 @@ const page = () => {
 
           <div className="green-pink-gradient p-[1px] rounded-xl w-[85%]">
             <div className="bg-[#151030] p-3 rounded-xl">
-              <p>{choices ? roulette[choices].choice : "Spin to start"}</p>
+              <p>{choices ? roulette[choices - 1].choice : "Spin to start"}</p>
             </div>
           </div>
 
@@ -24,7 +24,7 @@ const page = () => {
             type="button"
             className=" w-[60%] flex items-center justify-center rounded-lg py-2 text-[17px] font-medium transition-all outline-none bg-transparent coin-button duration-200"
             onClick={() => {
-              setchoices(Math.floor(Math.random() * roulette.length));
+              setchoices(Math.ceil(Math.random() * roulette.length));
             }}
           >
             SPIN
