@@ -5,17 +5,15 @@ import Image from "next/image";
 import { head, tail } from "../../../public";
 import "./coin.css";
 
-let coinFace = "";
 const page = () => {
-  const [randNum, setrandNum] = useState();
+  const [coinFace, setcoinFace] = useState("");
   const coinFlip = () => {
-    setrandNum(Math.random());
+    const randNum = Math.random();
     if (randNum > 1 / 2) {
-      coinFace = "heads";
+      setcoinFace("heads");
     } else {
-      coinFace = "tails";
+      setcoinFace("tails");
     }
-    console.log(randNum);
   };
 
   return (
