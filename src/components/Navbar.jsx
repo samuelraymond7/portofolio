@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { navLinks } from "@/constants";
+import { navLinks, games } from "@/constants";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -64,9 +64,13 @@ const Navbar = () => {
             </NavigationMenuList>
 
             <NavigationMenuList trigger="Games">
-              <p className="text-[15px] font-medium leading-none">
-                No games available yet
-              </p>
+              {games.map((game) => (
+                <NavigationMenuContent
+                  key={game.id}
+                  title={game.title}
+                  link={game.link}
+                />
+              ))}
             </NavigationMenuList>
 
             <Link
@@ -98,7 +102,13 @@ const Navbar = () => {
             </SideMenuList>
 
             <SideMenuList trigger="Game">
-              <p className="text-[15px] font-medium ">No games available yet</p>
+              {games.map((game) => (
+                <SideMenuContent
+                  key={game.id}
+                  title={game.title}
+                  link={game.link}
+                />
+              ))}
             </SideMenuList>
           </SideMenu>
         </nav>
