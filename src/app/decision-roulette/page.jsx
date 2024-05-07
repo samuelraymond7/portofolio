@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import "./decision.css";
 import { roulette } from "@/constants";
 
 const page = () => {
