@@ -354,7 +354,7 @@ export const roulette = [
   },
   {
     id: "choice28",
-    choice: "Telling you now would spoil all the fun",
+    choice: "Not telling you now :)",
   },
   {
     id: "choice29",
