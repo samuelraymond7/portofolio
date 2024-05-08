@@ -3,7 +3,7 @@ import Carousel from "./ui/Carousel";
 import { projects } from "@/constants";
 
 const Hero = () => (
-  <section className=" bg-hero bg-cover bg-no-repeat bg-center w-full h-screen sm:px-16 px-6">
+  <section className=" bg-hero-pattern bg-cover bg-no-repeat bg-center w-full h-screen sm:px-16 px-6">
     <div className="pb-[100px] pt-[40px] xs:py-[40px] lg:pt-[95px] max-w-7xl mx-auto h-full flex flex-col relative max-lg:justify-evenly">
       <div className="flex flex-row items-start gap-3">
         <div className=" flex flex-col justify-center items-center mt-3 ml-2">
