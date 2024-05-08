@@ -38,6 +38,7 @@ const Carousel = ({ display }) => {
 
       <Link href="#projects" rel="noopener noreferrer" className=" h-full">
         <Image
+          priority
           src={display[imageIndex].image}
           alt="Hero Logo"
           width={1920}
