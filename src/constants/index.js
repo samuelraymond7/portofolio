@@ -4,7 +4,7 @@ import {
   metaverse,
   hoobank,
   web,
-  mobile,
+  react,
   procode,
   html,
   css,
@@ -141,8 +141,8 @@ export const services = [
     icon: web,
   },
   {
-    title: "React Developer",
-    icon: mobile,
+    title: "React/Next Developer",
+    icon: react,
   },
 ];
 

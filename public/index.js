@@ -3,7 +3,7 @@ import hoobank from "./hoobank.png";
 import metaverse from "./metaverse.png";
 import nike from "./nike.png";
 
-import mobile from "./mobile.png";
+import react from "./react.png";
 import web from "./web.png";
 
 import procode from "./procodecg.png";
@@ -36,7 +36,7 @@ export {
   hoobank,
   metaverse,
   nike,
-  mobile,
+  react,
   web,
   procode,
   html,
