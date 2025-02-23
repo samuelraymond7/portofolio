@@ -30,10 +30,16 @@ const About = () => (
         Overview.
       </h2>
       <p className="mt-4 text-[#aaa6c3] text-[17px] max-w-3xl leading-[30px]">
-        I&nbsp;m a front end web developer who is able to use HTML, CSS,
-        Javascript and also TypeScript. Other than that, I can also use several
-        frameworks such as React, Next.js and Node.js. I am a quick learner and
-        have a high desire to learn more.
+        Having skills in HTML, CSS and JavaScript is a must for a web developer.
+        I have worked with PHP and CodeIgniter 3 framework, and developed my
+        skills by learning React and Next.js. Experienced in database design and
+        development using MySQL and have also explored MongoDB. Capabilities in
+        using UI design tools such as Figma and Lunacy combined with frontend
+        frameworks such as Bootstrap and Tailwind CSS help me create web
+        interfaces. Git and GitHub for version control are also included in my
+        skillset. In addition, I am also familiar with OpenCV, Ladder Diagram,
+        MQTT Protocol, and Microsoft Office tools. I want to keep exploring and
+        expanding my skills in web and application development.
       </p>
     </div>
 
