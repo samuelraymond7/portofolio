@@ -9,6 +9,7 @@ import php from "./php.png";
 import codeigniter from "./codeigniter.png";
 
 import procode from "./procodecg.png";
+import aoi from "./aoi.png";
 
 import html from "./tech/html.png";
 import css from "./tech/css.png";
@@ -43,6 +44,7 @@ export {
   php,
   codeigniter,
   procode,
+  aoi,
   html,
   css,
   javascript,
