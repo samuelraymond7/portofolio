@@ -14,16 +14,20 @@ import aoi from "./aoi.png";
 import html from "./tech/html.png";
 import css from "./tech/css.png";
 import javascript from "./tech/javascript.png";
-import typescript from "./tech/typescript.png";
 import reactjs from "./tech/reactjs.png";
-import tailwind from "./tech/tailwind.png";
 import nextjs from "./tech/nextjs.png";
 import vite from "./tech/vite.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
+import phplogo from "./tech/php.png";
+import codelogo from "./tech/codeigniter.svg";
+import tailwind from "./tech/tailwind.png";
+import bootstrap from "./tech/bootstrap.png";
+import mysql from "./tech/mysql.png";
 import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import framermotion from "./tech/framermotion.svg";
+import git from "./tech/git.png";
+import figma from "./tech/figma.png";
+import lunacy from "./tech/lunacy.png";
+import python from "./tech/python.png";
+import opencv from "./tech/opencv.png";
 
 import github from "./github.png";
 
@@ -48,16 +52,20 @@ export {
   html,
   css,
   javascript,
-  typescript,
   reactjs,
-  tailwind,
   nextjs,
   vite,
-  figma,
-  git,
+  phplogo,
+  codelogo,
+  tailwind,
+  bootstrap,
+  mysql,
   mongodb,
-  nodejs,
-  framermotion,
+  git,
+  figma,
+  lunacy,
+  python,
+  opencv,
   github,
   rock,
   paper,

@@ -12,17 +12,21 @@ import {
   html,
   css,
   javascript,
-  typescript,
   reactjs,
-  tailwind,
   nextjs,
   vite,
-  figma,
-  git,
-  github,
+  phplogo,
+  codelogo,
+  tailwind,
+  bootstrap,
+  mysql,
   mongodb,
-  nodejs,
-  framermotion,
+  git,
+  figma,
+  lunacy,
+  python,
+  opencv,
+  github,
   rock,
   paper,
   scissor,
@@ -210,16 +214,8 @@ export const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Next JS",
@@ -230,8 +226,24 @@ export const technologies = [
     icon: vite,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "PHP",
+    icon: phplogo,
+  },
+  {
+    name: "CodeIgniter",
+    icon: codelogo,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
   },
   {
     name: "MongoDB",
@@ -246,12 +258,20 @@ export const technologies = [
     icon: github,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "Framer Motion",
-    icon: framermotion,
+    name: "Lunacy",
+    icon: lunacy,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "OpenCV",
+    icon: opencv,
   },
 ];
 
