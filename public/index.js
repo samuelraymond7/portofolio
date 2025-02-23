@@ -5,6 +5,8 @@ import nike from "./nike.png";
 
 import react from "./react.png";
 import web from "./web.png";
+import php from "./php.png";
+import codeigniter from "./codeigniter.png";
 
 import procode from "./procodecg.png";
 
@@ -38,6 +40,8 @@ export {
   nike,
   react,
   web,
+  php,
+  codeigniter,
   procode,
   html,
   css,

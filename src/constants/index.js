@@ -5,6 +5,8 @@ import {
   hoobank,
   web,
   react,
+  php,
+  codeigniter,
   procode,
   html,
   css,
@@ -143,6 +145,14 @@ export const services = [
   {
     title: "React/Next Developer",
     icon: react,
+  },
+  {
+    title: "PHP Developer",
+    icon: php,
+  },
+  {
+    title: "CodeIgniter Developer",
+    icon: codeigniter,
   },
 ];
 

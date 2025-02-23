@@ -43,7 +43,7 @@ const About = () => (
       </p>
     </div>
 
-    <div className="mt-14 md:justify-around flex max-md:flex-col items-center gap-16">
+    <div className="mt-14 flex flex-wrap items-start justify-evenly gap-16">
       {services.map((service) => (
         <ServiceCard
           key={service.title}
