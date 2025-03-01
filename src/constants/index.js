@@ -163,7 +163,7 @@ export const services = [
 
 export const experiences = [
   {
-    title: "Mechatronic Senior Specialist",
+    title: "Mechatronic Specialist",
     company_name: "Apparel One Indonesia",
     icon: aoi,
     iconBg: "#C4C4C4",
