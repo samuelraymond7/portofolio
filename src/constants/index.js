@@ -38,7 +38,7 @@ export const navLinks = [
     title: "About",
     link: "https://samuelraymond7.github.io/portofolio/#about",
     content:
-      "I'm a front end web developer who is able to use HTML, CSS, Javascript and also TypeScript. Other than that, I can also use several frameworks such as React, Next.js and Node.js. I am a quick learner and have a high desire to learn more.",
+      "Having skills in HTML, CSS and JavaScript is a must for a web developer. I have worked with PHP and CodeIgniter 3 framework, and developed my skills by learning React and Next.js.",
   },
   {
     id: "work",
