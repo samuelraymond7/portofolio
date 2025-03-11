@@ -163,7 +163,7 @@ export const services = [
 
 export const experiences = [
   {
-    title: "Mechatronic Specialist",
+    title: "Programmer and Software Developer for Manufacturing Innovation",
     company_name: "Apparel One Indonesia",
     icon: aoi,
     iconBg: "#C4C4C4",
@@ -174,7 +174,7 @@ export const experiences = [
       "Planned and created MySQL databases to support web application.",
       "Developed web application using HTML, CSS, JavaScript, and PHP framework CodeIgniter 3 with MVC pattern.",
       "Utilized Bootstrap to create visually appealing web templates.",
-      "Created computer vision program utilizing OpenCV.",
+      "Developed computer vision program utilizing OpenCV.",
       "Programmed and integrated Haiwell PLC and HMI using Ladder Diagram.",
       "Implemented MQTT protocol for seamless communication between web application and Haiwell PLC.",
       "Documented all stages of web application development for future reference.",
