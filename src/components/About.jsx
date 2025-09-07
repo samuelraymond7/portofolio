@@ -10,7 +10,7 @@ const ServiceCard = ({ title, icon }) => (
         alt={title}
         width={208}
         height={208}
-        className="w-16 h-16 object-contain"
+        className="object-contain w-16 h-16"
       />
       <h3 className=" text-white text-[20px] font-bold text-center">{title}</h3>
     </div>
@@ -30,20 +30,23 @@ const About = () => (
         Overview.
       </h2>
       <p className="mt-4 text-[#aaa6c3] text-[17px] max-w-3xl leading-[30px]">
-        Having skills in HTML, CSS and JavaScript is a must for a web developer.
-        I have worked with PHP and CodeIgniter 3 framework, and developed my
-        skills by learning React and Next.js. Experienced in database design and
-        development using MySQL and have also explored MongoDB. Capabilities in
-        using UI design tools such as Figma and Lunacy combined with frontend
-        frameworks such as Bootstrap and Tailwind CSS help me create web
-        interfaces. Git and GitHub for version control are also included in my
-        skillset. In addition, I am also familiar with OpenCV, Ladder Diagram,
-        MQTT Protocol, and Microsoft Office tools. I want to keep exploring and
-        expanding my skills in web and application development.
+        I am a web developer with experience in building applications using PHP
+        with CodeIgniter 3 (MVC), along with HTML, CSS, JavaScript, and MySQL.
+        At work, I design interfaces with Lunacy and build responsive layouts
+        using Bootstrap.
+        <br />
+        <br /> I use Git and GitHub for version control and collaboration, and I
+        have worked with the MQTT protocol, Haiwell PLC (Ladder Diagram), HMI,
+        and OpenCV for project needs.
+        <br />
+        <br /> Outside of work, I explore newer tools such as React, Next.js,
+        Tailwind CSS, and MongoDB to expand my skills. I also have basic
+        experience with CAD, graphic design, and video editing to support
+        project tasks.
       </p>
     </div>
 
-    <div className="mt-14 flex flex-wrap items-start justify-evenly gap-16">
+    <div className="flex flex-wrap items-start gap-16 mt-14 justify-evenly">
       {services.map((service) => (
         <ServiceCard
           key={service.title}
