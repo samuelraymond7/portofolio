@@ -167,7 +167,7 @@ export const experiences = [
     company_name: "Apparel One Indonesia",
     icon: aoi,
     iconBg: "#C4C4C4",
-    date: "July 2024 - Present",
+    date: "July 2024 - Oct 2025",
     points: [
       "Designed and developed web applications: UI (Lunacy), workflows, MySQL databases, and full-stack development using CodeIgniter 3 (MVC) with PHP, HTML, CSS, and JavaScript.",
       "Built responsive and reusable web templates with Bootstrap.",
